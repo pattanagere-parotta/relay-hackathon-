@@ -1,0 +1,63 @@
+body {
+    font-family: Georgia, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #000;
+    line-height: 1.6;
+}
+
+header {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 1.5rem; 
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin: 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+
+
+.post {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+    .post:hover {
+        background-color: #f9f9f9;
+    }
+
+#articlePage {
+    padding-top: 40px;
+}
+
+footer {
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    margin-top: 40px;
+}
+
+
+.hidden {
+    display: none;
+}
