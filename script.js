@@ -1,4 +1,4 @@
-﻿document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     const pages = document.querySelectorAll('.page');
     const homeLink = document.getElementById('homeLink');
     const aboutLink = document.getElementById('aboutLink');
@@ -58,6 +58,23 @@
             }
         }
     }
+
+    const filterInput =
+        document.getElementById('filterInput');
+    const listItems =
+        document.querySelectorAll('.listItem');
+
+    filterInput.addEventListener('input', function () {
+        const filterValue = filterInput.value.toLowerCase();
+        listItems.forEach(function (item) {
+            const text = item.innerText.toLowerCase();
+            if (text.includes(filterValue)) {
+                item.classList.remove('hidden');
+            } else {
+                item.classList.add('hidden');
+            }
+        });
+    });
 
     window.openArticle = openArticle;
     showPage('homePage');
